@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm Products - Farmmhub</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.location {
+    color: gray;
+    font-size: 14px;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 Farmmhub</h1>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./marketplace.html">Marketplace</a>
+    </nav>
+</header>
+
+<section>
+    <h2 style="text-align:center; margin-top:20px;">🛒 Available Products</h2>
+
+    <div class="products-container">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4" alt="Cow">
+            <div class="product-details">
+                <h3>Desi Cow</h3>
+                <p class="price">₹45,000</p>
+                <p class="location">📍 Haryana</p>
+                <p>Seller: Ramesh Kumar</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1598514982841-8f9a5c6d8e89" alt="Wheat">
+            <div class="product-details">
+                <h3>Organic Wheat (50kg)</h3>
+                <p class="price">₹2,500</p>
+                <p class="location">📍 Punjab</p>
+                <p>Seller: Gurpreet Singh</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="Tractor">
+            <div class="product-details">
+                <h3>Used Tractor</h3>
+                <p class="price">₹3,20,000</p>
+                <p class="location">📍 UP</p>
+                <p>Seller: Manoj Yadav</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f" alt="Milk">
+            <div class="product-details">
+                <h3>Fresh Cow Milk (10L)</h3>
+                <p class="price">₹600</p>
+                <p class="location">📍 Rajasthan</p>
+                <p>Seller: Sunita Devi</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Farmmhub | Product Listings</p>
+</footer>
+
+</body>
+</html>
